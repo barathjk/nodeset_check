@@ -9,7 +9,15 @@
           
 - project:
     name: my-project
-    check:
+    gh_check:
       jobs:
         - my-test-job
-
+    gh_gate:
+      jobs:
+        - my-test-job
+    gh_post:
+      jobs:
+        - my-test-job
+    gh_tag:
+      jobs:
+        - my-test-job
