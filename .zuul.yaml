@@ -1,0 +1,15 @@
+- job:
+    name: my-test-job
+    run: playbooks/my-test-playbook.yaml
+    nodeset:
+      nodes:
+        - name: primary
+          label: ubuntu-jammy
+          
+          
+- project:
+    name: my-project
+    check:
+      jobs:
+        - my-test-job
+
