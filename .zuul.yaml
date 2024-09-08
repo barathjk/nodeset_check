@@ -4,7 +4,7 @@
     nodeset:
       nodes:
         - name: primary
-          label: ubuntu-jammy
+          label: ubuntu-xenial
           
           
 - project:
